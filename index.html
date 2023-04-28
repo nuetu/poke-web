@@ -6,6 +6,8 @@
       iframe {
         margin: auto;
         border-radius: 10px;
+        width: 600px;
+        height: 400px;
       }
       body {
         height: 100vh;
@@ -21,14 +23,19 @@
           rgba(255, 196, 0, 0.5) 100%
         );
       }
+      @media only screen and (max-width: 600px) {
+        iframe {
+          margin: 0;
+          width: 100vw;
+          height: 400px;
+        }
+      }
     </style>
   </head>
   <body>
     <div>
       <iframe
         src="https://replit.com/@TCSMCLjeong/Pokemon-Lets-Go-Pikachu?embed=true"
-        width="600"
-        height="400"
       />
     </div>
   </body>
