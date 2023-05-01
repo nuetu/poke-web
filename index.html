@@ -14,7 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgb(209, 0, 197);
+        background: rgba(255, 196, 0, 0.5);
         background: linear-gradient(
           180deg,
           rgba(209, 0, 197, 0.5) 0%,
@@ -23,11 +23,18 @@
           rgba(255, 196, 0, 0.5) 100%
         );
       }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 1000px) {
         iframe {
           margin: 0;
           width: 100vw;
-          height: 400px;
+          height: 100vh;
+          border-radius: 0px;
+        }
+        body {
+          margin: 0;
+          height: 95vh;
+          display: flex;
+          align-items: start;
         }
       }
     </style>
